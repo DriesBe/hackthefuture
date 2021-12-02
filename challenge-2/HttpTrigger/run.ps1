@@ -20,7 +20,7 @@ $body = @{
     "sendFakeDonaldData": true
 
 }
-$jsonBody = $body | ConvertFrom-Json
+$jsonBody = $body | ConvertTo-Json
 
 
 
