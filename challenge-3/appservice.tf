@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "group" {
 
 
 locals {
-  team_id = "29795"
+  team_id = 29795
 }
 
 ## An App Service Plan mainly defines the hardware that is used to host your App Service.
@@ -44,7 +44,7 @@ resource "azurerm_app_service" "app" {
   resource_group_name = azurerm_resource_group.group.name
 
   ## Uncomment The Line below !!!!! Link me with the plan by using the id of the item created above
-  app_service_plan_id = azurerm_app_service_plan.app.team_id
+  app_service_plan_id = azurerm_app_service_plan.appserviceplan.id
 
   # Configure Docker Image mvandep3/htf:latest here
   site_config {
