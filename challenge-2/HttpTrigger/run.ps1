@@ -13,7 +13,7 @@ param($Request, $TriggerMetadata)
 
 ## Start Making changes from here ##
 
-$url = "https://fun-challenge-2-29795.azurewebsites.net"
+$url = "https://htfapi.azurewebsites.net/api/the-real-donald"
 $method = "POST"
 $body = @{
     
